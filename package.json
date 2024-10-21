@@ -5,7 +5,8 @@
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "prepare": "husky install"
+        "prepare": "husky install",
+        "commit": "git-cz"
     },
     "author": "",
     "license": "ISC",
@@ -15,6 +16,10 @@
         "@eslint/js": "^8.0.1",
         "@typescript-eslint/eslint-plugin": "^8.10.0",
         "@typescript-eslint/parser": "^8.10.0",
+        "commitizen": "^4.3.1",
+        "commitlint-config-cz": "^0.13.3",
+        "cz-conventional-changelog": "^3.3.0",
+        "cz-customizable": "^7.2.1",
         "eslint": "^8.0.1",
         "eslint-plugin-react": "^7.37.1",
         "globals": "^15.11.0",
@@ -41,5 +46,10 @@
         "*.{ts,tsx,js,json,html,yml,css,less,scss,md}": [
             "prettier --write"
         ]
+    },
+    "config": {
+        "commitizen": {
+            "path": "node_modules/cz-customizable"
+        }
     }
 }
