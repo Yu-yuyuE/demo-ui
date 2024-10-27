@@ -31,6 +31,7 @@ const PLUGINS = [
 
 const getCssLoaders = (importLoaders) => [
     'style-loader',
+    // css module
     {
         loader: 'css-loader',
         options: {
@@ -72,7 +73,9 @@ module.exports = {
         open: true, // 打开默认浏览器
         hot: true, // 热更新
     },
+    // source-map
     devtool: "eval-source-map",
+    // 控制台输出
     stats: {
         modules: false
     },
